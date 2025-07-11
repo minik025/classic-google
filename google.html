@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eski Google</title>
+  <style>
+    /*Resim*/
+    .img {
+    margin-top: 100px;       /*resmin yukarı iç boşluğu*/
+    text-align: center;       /*resmş ortalar*/
+    max-width: 100%; 
+    }
+    /*Arka plan rengi*/
+    .search {
+    background-color: #d0d0d0;       /*box kutu stili arka plan rengi*/
+    text-align: center;                   /*kutuyu ortalar*/
+    font-family: 'Times New Roman', Times, serif;      /*yazı stili*/
+    padding: 0px;                 /*kutunun iç boslugu*/
+    }
+    /*Paragraf*/
+    .search p {
+    margin: 0;                /* Yazı ile parafraf arası sıfır */
+    padding: 0;   
+    font-size: 30px;          /*yazının boyutu*/
+    }
+    /*Arama kutusu*/
+    .search input {
+    padding: 6px;                 /*kutunuyla yazı arası iç bosluk*/
+    width: 640px;                /*kutunun genişliği*/
+    height: 20px;               /*kutunun yüksekliği*/
+    margin-top: 0;             /* Boşluk olmasın */
+    }
+    input[type="text"] {        /*kutunun dış hatları*/
+    border: 2px solid black;  /*rengi*/
+    }
+
+    .extra-buttons button {
+    padding: 6px 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px;        /* butonlar arası boşluk */
+    cursor: pointer;
+}
+
+/*****************************************************/
+
+/*1.kutu*/
+    .discover-box{
+    background-color: #24dbc9;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 950px;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    float: left;
+    }
+    p {
+    margin-bottom: 0px;    /*parafraf dis bosluk*/
+    font-size: 30px;
+    font-weight: bold;
+    }
+    a {
+    display: block;
+    font-size: 30px;
+    color: rgb(189, 0, 0);
+    font-weight: bold;
+    }
+
+/************************************************************/
+
+/*2.kutu*/
+    .help-box {
+    background-color: #20c5b5;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 450px;
+    height: auto;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    margin-top: 5px;
+    margin: 5px;
+    float: left;
+
+    }
+    .p {
+      /*parafraf dis bosluk*/
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .a {
+        display: block;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+/***************************************************************/
+
+/*3.kutu*/
+.explore-box {
+    background-color: #1dafa1;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 1132px;
+    margin-top: 5px;
+    padding-bottom: 17px;
+    float: right;
+}
+
+.explore-text {
+    font-size: 20px;
+    margin: 5px 5px 5px 5px;
+}
+
+.explore-input {
+    width: 400px;
+    height: 35px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.button-row {
+    display: flex;                 /* flex ile düzgün hizalama */
+    justify-content: center;       /* ortalar */
+    align-items: center;   
+    gap: 20px;                 /*buton arası bosluk*/
+}
+
+/* Buton stili */
+.subscribe-button {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+/* Link stili */
+.div-a {
+    display: inline-block;         /* buton gibi yan yana durur */
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(189, 0, 0);
+    text-decoration: underline;
+
+}
+
+  </style>
+</head> 
+<body>
+<div class="img">
+    <img width="700px" src="photos/google.jpg" height="200px" alt="Google logo">
+</div>
+<div class="search">
+    <p>Search the web using Google!</p>
+    <input type="text">
+<div class="extra-buttons">
+    <button type="button">Google Search</button>
+    <button type="button">I'm Feeling Lucky</button>
+</div>
+</div>
+<!--1.kutu-->
+<div class="discover-box">
+    <p>Special Searches</p>
+    <a href="https://www.stanford.edu/search/">Stanford Search</a>
+    <a href="https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/">Linux Search</a>
+    </div>
+<!--2.kutu-->
+    <div class="help-box">
+    <a href="https://support.google.com/">Help!</a>
+    <a href="https://about.google/">About Google</a>
+    <a href="https://companyinfo.nl/en/">Company İnfo</a>
+    <a href="https://tr.wikipedia.org/wiki/Google_logosu">Google Logos</a>
+    </div>
+<!--3.kutu-->
+<div class="explore-box">
+    <p class="explore-text">
+        Get Google <br>
+        updates monthly:
+    </p>
+    <input type="text" class="explore-input" placeholder="your e-mail">
+    <div class="button-row">
+        <button type="button" class="subscribe-button">Subscribe</button>
+        <a href="https://en.wikipedia.org/wiki/Archive" class="div-a">Archive</a>
+    </div>
+</div>
+
+</body>
+</html>
